@@ -92,12 +92,16 @@ class PerformanceTracker:
 
     def update_task_value_by_id(self, target_id: int, new_task_value: int):
         try:
-            for employee in self.performance_data:
-                if employee["employee_id"] == target_id:
+            if new_task_value <= 0:
+                raise ValueError("Task value should be greater than zero")
+            else:
+                for employee in self.performance_data:
                     new_emp_record = {
-                        **employee,
-                        employee["tasks_completed"]: new_task_value
+                        **employee
                     }
-            return new_emp_record
+                    if new_emp_record["employee_id"] == target_id:
+                        new_emp_record["tasks_completed"] = new_task_value
+                        return new_emp_record
+            return "Employee Id Not Found"
         except Exception as e:
             return e

@@ -24,4 +24,4 @@ if __name__ == "__main__":
     # result_by_id = emp_performance_tracker.find_emp_record_by_id(9821)
     # print(json.dumps(result_by_id, indent=4))
 
-    print(emp_performance_tracker.update_task_value_by_id(101, 15))
+    print(emp_performance_tracker.update_task_value_by_id(124, -50))
