@@ -16,7 +16,7 @@ if __name__ == "__main__":
         # pprint(low_stock_products, indent=4)
 
         # FIND PRODUCT BY id
-        products_by_id = inventory_stock_manager.find_product_by_id(1012)
+        products_by_id = inventory_stock_manager.find_product_by_id(10028)
         pprint(products_by_id, indent=4)
     except Exception as e:
         print(f"⚠️ Error Occured: {e}")
