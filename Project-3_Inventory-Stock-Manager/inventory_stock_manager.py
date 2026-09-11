@@ -128,3 +128,16 @@ class InventoryStockManager:
 
         raise KeyError(
             f"There is no product_id:{target_id} in products database")
+
+    def inventory_summary(self, low_stock_threshold: int = 10):
+        low_stock_products = self.find_low_stock(low_stock_threshold)
+
+        summary = {
+            "total_products": self.total_products(),
+            "total_inventory_value": self.products_value(),
+            "low_stock_count": len(low_stock_products),
+            "highest_inventory_product": self.highest_inventory(),
+            "inventory_value_by_category": self.inventory_values_by_category(),
+        }
+
+        return summary
