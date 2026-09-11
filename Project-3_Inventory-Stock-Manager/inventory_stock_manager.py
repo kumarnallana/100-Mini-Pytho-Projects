@@ -2,6 +2,13 @@ class InventoryStockManager:
     def __init__(self, products_db: list[dict[str: str | int]]):
         self.products_db = products_db
 
+    def total_products(self):
+        count: int = 0
+        for products in self.products_db:
+            for _ in products:
+                count += 1
+        return count
+
     def find_low_stock(self, threshold: int):
         if threshold <= 0:
             raise ValueError(
@@ -45,7 +52,7 @@ class InventoryStockManager:
             category = product.get("category")
             quantity = product.get("quantity")
 
-            if price > 0 and quantity > 0:
+            if price >= 0 and quantity >= 0:
                 total_inventory_value = price * quantity
             else:
                 raise ValueError(
@@ -103,3 +110,21 @@ class InventoryStockManager:
                 return new_person_db
             raise KeyError(
                 f"There is no product_id:{target_id} in products database")
+
+    def remove_product(self, target_id: int):
+        if not isinstance(target_id, int):
+            raise ValueError(f"{target_id} Should be a integer")
+        elif target_id <= 0:
+            raise ValueError(
+                f"{target_id} should be a positive product ID"
+            )
+
+        for products in self.products_db:
+            if products["product_id"] == target_id:
+                deleted_product = {
+                    **products
+                }
+                return deleted_product
+
+        raise KeyError(
+            f"There is no product_id:{target_id} in products database")

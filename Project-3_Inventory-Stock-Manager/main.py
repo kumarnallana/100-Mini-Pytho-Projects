@@ -7,7 +7,7 @@ with open("products_data.json") as pd_file:
     products_data = json.load(pd_file)
 
 if __name__ == "__main__":
-    # try:
+try:
     inventory_stock_manager = InventoryStockManager(
         products_db=products_data)
 
@@ -27,13 +27,33 @@ if __name__ == "__main__":
     # inventory_values = inventory_stock_manager.inventory_values_by_category()
     # pprint(inventory_values, indent=4)
 
-    # PRODUCT WITH HIGHEST INVENTORY VALUE
-    # highest_inventory_product = inventory_stock_manager.highest_inventory()
-    # pprint(highest_inventory_product, indent=4)
-
     # UPDATE PRODUCTS QUANTITY THROUGH id
-    updated_quantity = inventory_stock_manager.update_quantity_by_id(
-        10000001, 50)
-    pprint(updated_quantity, indent=4)
-    # except Exception as e:
-    #     print(f"⚠️ Error Occured: {e}")
+    # updated_quantity = inventory_stock_manager.update_quantity_by_id(
+    #     10000001, 50)
+    # pprint(updated_quantity, indent=4)
+
+    # DELETE PRODUCT BY ID
+    # deleted_product = inventory_stock_manager.remove_product(1007)
+    # pprint(deleted_product, indent=4)
+
+    # PRINT ALL POSSIBLE CONTENT SUMMARY
+    # Total number of products
+    # Total inventory value
+    # Number of low-stock products
+    # Highest inventory-value product
+    # Total inventory value by category
+
+    def inventory_summary(self, low_stock_threshold: int = 10):
+        low_stock_products = self.find_low_stock(low_stock_threshold)
+
+        summary = {
+            "total_products": self.total_products(),
+            "total_inventory_value": self.products_value(),
+            "low_stock_count": len(low_stock_products),
+            "highest_inventory_product": self.highest_inventory(),
+            "inventory_value_by_category": self.inventory_values_by_category(),
+        }
+
+        return summary
+except Exception as e:
+    print(f"⚠️ Error Occured: {e}")
