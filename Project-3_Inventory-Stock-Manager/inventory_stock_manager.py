@@ -36,3 +36,23 @@ class InventoryStockManager:
             product_value += products.get("price") * products.get("quantity")
 
         return f"For all products total product value is: {product_value}$"
+
+    def inventory_values_by_category(self):
+        new_products_dict: dict[str: int] = {}
+
+        for product in self.products_db:
+            price = product.get("price", {})
+            quantity = product.get("quantity", {})
+            category = product.get("category", {})
+
+            if price > 0 and quantity > 0:
+                total_inventory_value = price * quantity
+            else:
+                raise ValueError(
+                    "Price and quantities Values either zero or negative")
+
+            if category.lowerr() in new_products_dict:
+                new_products_dict[category] += total_inventory_value
+            else:
+                new_products_dict[category] = total_inventory_value
+        return new_products_dict

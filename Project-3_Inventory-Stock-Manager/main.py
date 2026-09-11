@@ -20,7 +20,11 @@ if __name__ == "__main__":
         # pprint(products_by_id, indent=4)
 
         # ALL PRODUCTS INVENTORY OR PRICE VALUE
-        all_products_value = inventory_stock_manager.products_value()
-        pprint(all_products_value, indent=4)
+        # all_products_value = inventory_stock_manager.products_value()
+        # pprint(all_products_value, indent=4)
+
+        # INVENTORY VALUES BY category
+        inventory_values = inventory_stock_manager.inventory_values_by_category()
+        pprint(inventory_values, indent=4)
     except Exception as e:
         print(f"⚠️ Error Occured: {e}")
