@@ -7,7 +7,7 @@
 **A deliberate 100-project masterclass in algorithmic thinking, mental modeling, and self-reliant software engineering.**
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Progress](https://img.shields.io/badge/Progress-2%2F100%20(2%25)-00C853?style=for-the-badge)](https://github.com/kumarnallana/100-Mini-Pytho-Projects)
+[![Progress](https://img.shields.io/badge/Progress-3%2F100%20(3%25)-00C853?style=for-the-badge)](https://github.com/kumarnallana/100-Mini-Pytho-Projects)
 [![Logic](https://img.shields.io/badge/Focus-First--Principles-FF6F00?style=for-the-badge)](https://github.com/kumarnallana/100-Mini-Pytho-Projects)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
@@ -59,7 +59,7 @@ Every single project in this repository adheres to a strict four-phase methodolo
 
 | Tier | Focus Area | Projects | Status | Progress |
 | :---: | :--- | :---: | :---: | :---: |
-| **01** | Foundations & Accumulator Logic | 01 – 10 | 🟡 In Progress | 2 / 10 |
+| **01** | Foundations & Accumulator Logic | 01 – 10 | 🟡 In Progress | 3 / 10 |
 | **02** | Control Flow, Collections & State | 11 – 20 | ⚪ Upcoming | 0 / 10 |
 | **03** | Data Processing, Parsing & File I/O | 21 – 30 | ⚪ Upcoming | 0 / 10 |
 | **04** | Object-Oriented Design & Simulators | 31 – 40 | ⚪ Upcoming | 0 / 10 |
@@ -69,7 +69,7 @@ Every single project in this repository adheres to a strict four-phase methodolo
 | **08** | Interactive Games & Simulations | 71 – 80 | ⚪ Upcoming | 0 / 10 |
 | **09** | Networking, Web & API Engineering | 81 – 90 | ⚪ Upcoming | 0 / 10 |
 | **10** | Capstone Systems & Interpreters | 91 – 100 | ⚪ Upcoming | 0 / 10 |
-| **TOTAL** | **The Complete Logic Challenge** | **100** | 🚀 **2% Complete** | **2 / 100** |
+| **TOTAL** | **The Complete Logic Challenge** | **100** | 🚀 **3% Complete** | **3 / 100** |
 
 ---
 
@@ -80,7 +80,7 @@ Every single project in this repository adheres to a strict four-phase methodolo
 
 - [x] **01. [Salary Expense Tracker](./Project-1_Salary_Expense_Tracker)** — Manual record counting, sum accumulation, threshold filtering, and OOP reporting.
 - [x] **02. [Employee Performance Tracker](./Project_2_Employee_Performance)** — Record search by ID, department grouping, aggregation analytics, quality score metrics, and task updates.
-- [ ] **03. Word & Character Frequency Counter** — Pure string traversal and hash counters without standard library shortcuts.
+- [x] **03. [Inventory Stock Manager](./Project-3_Inventory-Stock-Manager)** — Stock threshold alerting, price/quantity valuation, category aggregation, and ID-based inventory mutations.
 - [ ] **04. Rock-Paper-Scissors with Probability Tracker** — Player pattern detection and win-streak evaluation.
 - [ ] **05. Palindrome & Anagram Verifier** — Two-pointer string scanning and frequency map comparison.
 - [ ] **06. Prime Number Sieve & Factorization** — Sieve of Eratosthenes and prime factor tree generation.
@@ -256,6 +256,12 @@ Every single project in this repository adheres to a strict four-phase methodolo
 │   ├── performance_data.json          # Enterprise employee records dataset
 │   ├── employee_performance.py        # Core PerformanceTracker implementation
 │   ├── main.py                        # Program entry point & report runner
+│   └── README.md                      # Dedicated project documentation & complexity analysis
+│
+├── Project-3_Inventory-Stock-Manager/ # Tier 1: Inventory Stock Manager (Completed)
+│   ├── products_data.json             # Warehouse catalog dataset
+│   ├── inventory_stock_manager.py     # Core InventoryStockManager implementation
+│   ├── main.py                        # Program entry point & CLI Table Dashboard
 │   └── README.md                      # Dedicated project documentation & complexity analysis
 │
 └── Project-100~Portfolio_Dashboard/   # Tier 10: Portfolio CLI Dashboard
