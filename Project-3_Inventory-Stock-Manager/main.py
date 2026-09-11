@@ -55,5 +55,8 @@ try:
         }
 
         return summary
+
+    summary = inventory_stock_manager.inventory_summary(10)
+    pprint(summary, indent=4)
 except Exception as e:
     print(f"⚠️ Error Occured: {e}")
