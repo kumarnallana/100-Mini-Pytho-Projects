@@ -23,3 +23,16 @@ class InventoryStockManager:
             if products["product_id"] == target_id:
                 products_storage.append(products)
         return products_storage
+
+    def products_value(self):
+
+        product_value: int = 0
+
+        for products in self.products_db:
+
+            if products["price"] <= 0 and products["quantity"] <= 0:
+                raise ValueError("Products Value either zero or negative")
+
+            product_value += products.get("price") * products.get("quantity")
+
+        return f"For all products total product value is: {product_value}$"
