@@ -1,7 +1,7 @@
 [
   {
     "product_id": 1001,
-    "product_name": "Laptop",
+    "product_name": "Laptop-ryzen8540u",
     "category": "Electronics",
     "price": 65000,
     "quantity": 8

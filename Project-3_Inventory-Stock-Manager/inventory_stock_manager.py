@@ -84,4 +84,22 @@ class InventoryStockManager:
             for product in new_product_db
             if product["total_inventory"] == max_inventory
         ]
+
         return highest_inventory_products
+
+    def update_quantity_by_id(self, target_id: int, new_quantity: int):
+        new_person_db: list[dict[str: str | int]] = []
+        if new_quantity < 0:
+            raise ValueError(
+                f"{new_quantity} should not be negative value ")
+
+        for products in self.products_db:
+            if products["product_id"] == target_id:
+                new_person_db.append({
+                    **products,
+                    "quantity": new_quantity
+                })
+
+                return new_person_db
+            raise KeyError(
+                f"There is no product_id:{target_id} in products database")

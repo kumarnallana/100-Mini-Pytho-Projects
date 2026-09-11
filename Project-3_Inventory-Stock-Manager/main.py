@@ -28,8 +28,12 @@ if __name__ == "__main__":
     # pprint(inventory_values, indent=4)
 
     # PRODUCT WITH HIGHEST INVENTORY VALUE
-    highest_inventory_product = inventory_stock_manager.highest_inventory()
-    pprint(highest_inventory_product, indent=4)
+    # highest_inventory_product = inventory_stock_manager.highest_inventory()
+    # pprint(highest_inventory_product, indent=4)
 
+    # UPDATE PRODUCTS QUANTITY THROUGH id
+    updated_quantity = inventory_stock_manager.update_quantity_by_id(
+        10000001, 50)
+    pprint(updated_quantity, indent=4)
     # except Exception as e:
     #     print(f"⚠️ Error Occured: {e}")
