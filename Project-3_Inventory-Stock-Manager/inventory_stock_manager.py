@@ -74,8 +74,14 @@ class InventoryStockManager:
                 "total_inventory": total_inventory_value
             })
 
-        highest_inventory_value = max(
-            new_product_db,
-            key=lambda product: product["total_inventory"]
-        )
-        return highest_inventory_value
+            max_inventory = max(
+                product["total_inventory"]
+                for product in new_product_db
+            )
+
+        highest_inventory_products = [
+            product
+            for product in new_product_db
+            if product["total_inventory"] == max_inventory
+        ]
+        return highest_inventory_products
