@@ -93,3 +93,4 @@ def test_reset_endpoint():
     # Confirm stats are reset
     stats_resp = client.get("/api/stats")
     assert stats_resp.json()["total_rounds"] == 0
+
