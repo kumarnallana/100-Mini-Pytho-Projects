@@ -58,7 +58,7 @@ class RoundRecord:
 @dataclass
 class StreakStats:
     current_streak: int = 0          # >0 for player wins, <0 for AI wins, 0 initially
-    current_streak_type: str = "none" # "win", "loss", "none"
+    current_streak_type: str = "none"  # "win", "loss", "none"
     max_player_win_streak: int = 0
     max_ai_win_streak: int = 0
     total_player_win_streaks_ge_3: int = 0
@@ -263,7 +263,8 @@ class RpsEngine:
         """
         player_move = player_move.strip().lower()
         if player_move not in VALID_MOVES:
-            raise ValueError(f"Invalid move '{player_move}'. Must be one of: {sorted(list(VALID_MOVES))}")
+            raise ValueError(
+                f"Invalid move '{player_move}'. Must be one of: {sorted(list(VALID_MOVES))}")
 
         # AI chooses move based on current predictive models before observing new move
         ai_move, predicted_player_move, confidence, _ = self.choose_ai_counter_move()
@@ -356,13 +357,17 @@ class RpsEngine:
     def get_summary_metrics(self) -> Dict:
         """Computes comprehensive dashboard metrics."""
         non_ties = self.player_wins + self.ai_wins
-        player_win_rate = round((self.player_wins / self.total_rounds * 100), 2) if self.total_rounds > 0 else 0.0
-        ai_win_rate = round((self.ai_wins / self.total_rounds * 100), 2) if self.total_rounds > 0 else 0.0
-        tie_rate = round((self.ties / self.total_rounds * 100), 2) if self.total_rounds > 0 else 0.0
+        player_win_rate = round(
+            (self.player_wins / self.total_rounds * 100), 2) if self.total_rounds > 0 else 0.0
+        ai_win_rate = round(
+            (self.ai_wins / self.total_rounds * 100), 2) if self.total_rounds > 0 else 0.0
+        tie_rate = round((self.ties / self.total_rounds * 100),
+                         2) if self.total_rounds > 0 else 0.0
 
         ai_accuracy = 0.0
         if self.history:
-            correct_preds = sum(1 for r in self.history if r.prediction_correct)
+            correct_preds = sum(
+                1 for r in self.history if r.prediction_correct)
             ai_accuracy = round((correct_preds / len(self.history)) * 100, 2)
 
         probs_breakdown = self.get_player_probabilities()
@@ -438,4 +443,3 @@ class RpsEngine:
             last_sim_outcome = record.outcome
 
         return results
-
