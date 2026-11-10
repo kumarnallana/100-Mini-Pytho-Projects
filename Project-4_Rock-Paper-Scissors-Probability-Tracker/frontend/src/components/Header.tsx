@@ -1,7 +1,7 @@
 "use client";
 
+import { RotateCcw } from "lucide-react";
 import React from "react";
-import { RotateCcw, Activity, ShieldCheck, Flame } from "lucide-react";
 
 interface HeaderProps {
   serverConnected: boolean;
@@ -35,7 +35,9 @@ export const Header: React.FC<HeaderProps> = ({
               >
                 <span
                   className={`w-1.5 h-1.5 rounded-full ${
-                    serverConnected ? "bg-emerald-400 animate-ping" : "bg-amber-400"
+                    serverConnected
+                      ? "bg-emerald-400 animate-ping"
+                      : "bg-amber-400"
                   }`}
                 />
                 {serverConnected ? "FastAPI Connected" : "Local Mode"}
@@ -56,7 +58,9 @@ export const Header: React.FC<HeaderProps> = ({
             disabled={isResetting}
             className="flex items-center gap-2 px-3.5 py-2 text-xs font-semibold rounded-lg bg-gray-800/80 hover:bg-gray-700 text-gray-200 border border-gray-700/60 transition shadow-sm hover:border-gray-600 active:scale-95 disabled:opacity-50"
           >
-            <RotateCcw className={`w-3.5 h-3.5 ${isResetting ? "animate-spin" : ""}`} />
+            <RotateCcw
+              className={`w-3.5 h-3.5 ${isResetting ? "animate-spin" : ""}`}
+            />
             Reset Match
           </button>
         </div>
@@ -64,4 +68,3 @@ export const Header: React.FC<HeaderProps> = ({
     </header>
   );
 };
-
