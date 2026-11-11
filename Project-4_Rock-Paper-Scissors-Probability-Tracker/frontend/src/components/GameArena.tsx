@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useEffect } from "react";
 import confetti from "canvas-confetti";
-import { MoveType, OutcomeType, RoundRecord } from "../types/rps";
-import { Sparkles, Zap, BrainCircuit, RefreshCw } from "lucide-react";
+import { BrainCircuit } from "lucide-react";
+import React, { useEffect } from "react";
+import { MoveType, RoundRecord } from "../types/rps";
 
 interface GameArenaProps {
   onPlayMove: (move: MoveType) => void;
@@ -13,7 +13,14 @@ interface GameArenaProps {
 
 const MOVE_CONFIG: Record<
   MoveType,
-  { label: string; emoji: string; color: string; border: string; bg: string; key: string }
+  {
+    label: string;
+    emoji: string;
+    color: string;
+    border: string;
+    bg: string;
+    key: string;
+  }
 > = {
   rock: {
     label: "Rock",
@@ -70,7 +77,11 @@ export const GameArena: React.FC<GameArenaProps> = ({
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (isLoading) return;
-      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
+      if (
+        e.target instanceof HTMLInputElement ||
+        e.target instanceof HTMLTextAreaElement
+      )
+        return;
 
       const k = e.key.toLowerCase();
       if (k === "r") onPlayMove("rock");
@@ -116,15 +127,15 @@ export const GameArena: React.FC<GameArenaProps> = ({
                   lastRound.outcome === "win"
                     ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/30 animate-pulse"
                     : lastRound.outcome === "loss"
-                    ? "bg-rose-500/10 text-rose-400 border-rose-500/30"
-                    : "bg-gray-500/10 text-gray-300 border-gray-500/30"
+                      ? "bg-rose-500/10 text-rose-400 border-rose-500/30"
+                      : "bg-gray-500/10 text-gray-300 border-gray-500/30"
                 }`}
               >
                 {lastRound.outcome === "win"
                   ? "🎉 YOU WON"
                   : lastRound.outcome === "loss"
-                  ? "💀 AI WON"
-                  : "🤝 DRAW"}
+                    ? "💀 AI WON"
+                    : "🤝 DRAW"}
               </div>
             )}
           </div>
@@ -149,8 +160,10 @@ export const GameArena: React.FC<GameArenaProps> = ({
             <BrainCircuit className="w-3.5 h-3.5 text-indigo-400" />
             <span>
               AI predicted you would throw{" "}
-              <strong className="text-gray-200 uppercase">{lastRound.predicted_player_move}</strong> (
-              {lastRound.prediction_confidence}%)
+              <strong className="text-gray-200 uppercase">
+                {lastRound.predicted_player_move}
+              </strong>{" "}
+              ({lastRound.prediction_confidence}%)
             </span>
             <span
               className={`font-semibold px-1.5 py-0.2 rounded text-[10px] ${
@@ -159,7 +172,9 @@ export const GameArena: React.FC<GameArenaProps> = ({
                   : "bg-amber-500/20 text-amber-400"
               }`}
             >
-              {lastRound.prediction_correct ? "Predicted Correctly" : "You Fooled It"}
+              {lastRound.prediction_correct
+                ? "Predicted Correctly"
+                : "You Fooled It"}
             </span>
           </div>
         )}
@@ -206,4 +221,3 @@ export const GameArena: React.FC<GameArenaProps> = ({
     </div>
   );
 };
-
