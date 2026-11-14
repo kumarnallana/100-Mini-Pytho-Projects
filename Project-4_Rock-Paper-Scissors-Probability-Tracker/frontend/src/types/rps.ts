@@ -70,4 +70,3 @@ export interface PlayRoundResponse {
   };
   next_prediction: NextPrediction;
 }
-
