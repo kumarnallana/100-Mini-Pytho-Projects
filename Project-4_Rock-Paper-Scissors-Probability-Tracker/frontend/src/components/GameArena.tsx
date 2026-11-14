@@ -3,13 +3,7 @@
 import confetti from "canvas-confetti";
 import { BrainCircuit } from "lucide-react";
 import React, { useEffect } from "react";
-import { MoveType, RoundRecord } from "../types/rps";
-
-interface GameArenaProps {
-  onPlayMove: (move: MoveType) => void;
-  isLoading: boolean;
-  lastRound: RoundRecord | null;
-}
+import { MoveType } from "../types/rps";
 
 const MOVE_CONFIG: Record<
   MoveType,
