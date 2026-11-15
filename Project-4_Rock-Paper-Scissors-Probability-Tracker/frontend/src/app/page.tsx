@@ -1,11 +1,11 @@
 "use client";
 
-import React, { useState, useEffect, useCallback } from "react";
+import { useCallback, useEffect, useState } from "react";
+import { GameArena } from "../components/GameArena";
 import { Header } from "../components/Header";
 import { ScoreBoard } from "../components/ScoreBoard";
-import { GameArena } from "../components/GameArena";
-import { MoveType, RoundRecord, GameStats, StreakStats } from "../types/rps";
 import { fetchHealth, fetchStats, playMove, resetGame } from "../lib/api";
+import { GameStats, MoveType, RoundRecord, StreakStats } from "../types/rps";
 
 const INITIAL_STREAKS: StreakStats = {
   current_streak: 0,
@@ -142,9 +142,9 @@ export default function Home() {
       </div>
 
       <footer className="border-t border-gray-900 py-6 px-4 text-center text-xs text-gray-500">
-        100 Mini Python Projects • Tier 1: Project 04 — Rock-Paper-Scissors with Probability Tracker & Markov Pattern Detection
+        100 Mini Python Projects • Tier 1: Project 04 — Rock-Paper-Scissors with
+        Probability Tracker & Markov Pattern Detection
       </footer>
     </div>
   );
 }
-
