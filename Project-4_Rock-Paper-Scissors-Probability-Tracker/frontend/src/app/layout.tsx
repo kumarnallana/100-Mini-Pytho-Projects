@@ -1,9 +1,11 @@
-import "./globals.css";
 import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Rock-Paper-Scissors AI | Probability Tracker & Markov Pattern Detector",
-  description: "Next-generation Rock-Paper-Scissors with first-principles Markov chain pattern detection and win-streak evaluation.",
+  title:
+    "Rock-Paper-Scissors AI | Probability Tracker & Markov Pattern Detector",
+  description:
+    "Next-generation Rock-Paper-Scissors with first-principles Markov chain pattern detection and win-streak evaluation.",
 };
 
 export default function RootLayout({
@@ -19,4 +21,3 @@ export default function RootLayout({
     </html>
   );
 }
-
