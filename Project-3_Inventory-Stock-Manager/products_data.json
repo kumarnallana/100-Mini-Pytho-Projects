@@ -7,13 +7,6 @@
     "quantity": 8
   },
   {
-    "product_id": 1002,
-    "product_name": "Keyboard",
-    "category": "Electronics",
-    "price": 2500,
-    "quantity": 25
-  },
-  {
     "product_id": 1003,
     "product_name": "Mouse",
     "category": "Electronics",
