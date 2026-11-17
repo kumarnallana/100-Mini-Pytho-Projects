@@ -1,0 +1,93 @@
+{
+  "palindromes": [
+    {
+      "text": "A man, a plan, a canal: Panama",
+      "category": "phrase",
+      "expected": true
+    },
+    {
+      "text": "racecar",
+      "category": "single_word",
+      "expected": true
+    },
+    {
+      "text": "Was it a car or a cat I saw?",
+      "category": "phrase",
+      "expected": true
+    },
+    {
+      "text": "No 'x' in Nixon",
+      "category": "phrase",
+      "expected": true
+    },
+    {
+      "text": "deified",
+      "category": "single_word",
+      "expected": true
+    },
+    {
+      "text": "rotator",
+      "category": "single_word",
+      "expected": true
+    },
+    {
+      "text": "abca",
+      "category": "almost_palindrome",
+      "expected": false,
+      "almost_expected": true
+    },
+    {
+      "text": "radkar",
+      "category": "almost_palindrome",
+      "expected": false,
+      "almost_expected": true
+    },
+    {
+      "text": "algorithm",
+      "category": "non_palindrome",
+      "expected": false
+    }
+  ],
+  "anagram_pairs": [
+    {
+      "text1": "listen",
+      "text2": "silent",
+      "expected": true,
+      "category": "single_word"
+    },
+    {
+      "text1": "Dormitory",
+      "text2": "Dirty room",
+      "expected": true,
+      "category": "phrase"
+    },
+    {
+      "text1": "The Eyes",
+      "text2": "They See",
+      "expected": true,
+      "category": "phrase"
+    },
+    {
+      "text1": "cat",
+      "text2": "catch",
+      "expected": false,
+      "is_sub_anagram": true,
+      "category": "subset"
+    },
+    {
+      "text1": "apple",
+      "text2": "pale",
+      "expected": false,
+      "category": "mismatch"
+    }
+  ],
+  "anagram_word_bank": [
+    "eat", "tea", "tan", "ate", "nat", "bat",
+    "listen", "silent", "enlist", "tinsel", "inlets",
+    "stone", "tones", "notes", "onset",
+    "cinema", "iceman", "anemic",
+    "debitcard", "badcredit",
+    "elvis", "lives"
+  ]
+}
+

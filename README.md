@@ -59,7 +59,7 @@ Every single project in this repository adheres to a strict four-phase methodolo
 
 | Tier | Focus Area | Projects | Status | Progress |
 | :---: | :--- | :---: | :---: | :---: |
-| **01** | Foundations & Accumulator Logic | 01 – 10 | 🟡 In Progress | 3 / 10 |
+| **01** | Foundations & Accumulator Logic | 01 – 10 | 🟡 In Progress | 5 / 10 |
 | **02** | Control Flow, Collections & State | 11 – 20 | ⚪ Upcoming | 0 / 10 |
 | **03** | Data Processing, Parsing & File I/O | 21 – 30 | ⚪ Upcoming | 0 / 10 |
 | **04** | Object-Oriented Design & Simulators | 31 – 40 | ⚪ Upcoming | 0 / 10 |
@@ -69,7 +69,7 @@ Every single project in this repository adheres to a strict four-phase methodolo
 | **08** | Interactive Games & Simulations | 71 – 80 | ⚪ Upcoming | 0 / 10 |
 | **09** | Networking, Web & API Engineering | 81 – 90 | ⚪ Upcoming | 0 / 10 |
 | **10** | Capstone Systems & Interpreters | 91 – 100 | ⚪ Upcoming | 0 / 10 |
-| **TOTAL** | **The Complete Logic Challenge** | **100** | 🚀 **3% Complete** | **3 / 100** |
+| **TOTAL** | **The Complete Logic Challenge** | **100** | 🚀 **5% Complete** | **5 / 100** |
 
 ---
 
@@ -81,8 +81,8 @@ Every single project in this repository adheres to a strict four-phase methodolo
 - [x] **01. [Salary Expense Tracker](./Project-1_Salary_Expense_Tracker)** — Manual record counting, sum accumulation, threshold filtering, and OOP reporting.
 - [x] **02. [Employee Performance Tracker](./Project_2_Employee_Performance)** — Record search by ID, department grouping, aggregation analytics, quality score metrics, and task updates.
 - [x] **03. [Inventory Stock Manager](./Project-3_Inventory-Stock-Manager)** — Stock threshold alerting, price/quantity valuation, category aggregation, and ID-based inventory mutations.
-- [ ] **04. Rock-Paper-Scissors with Probability Tracker** — Player pattern detection and win-streak evaluation.
-- [ ] **05. Palindrome & Anagram Verifier** — Two-pointer string scanning and frequency map comparison.
+- [x] **04. [Rock-Paper-Scissors with Probability Tracker](./Project-4_Rock-Paper-Scissors-Probability-Tracker)** — Player pattern detection and win-streak evaluation.
+- [x] **05. [Palindrome & Anagram Verifier](./Project-5_Palindrome-Anagram-Verifier)** — Two-pointer string scanning and frequency map comparison.
 - [ ] **06. Prime Number Sieve & Factorization** — Sieve of Eratosthenes and prime factor tree generation.
 - [ ] **07. Temperature & Unit Converter** — Multi-unit conversion matrix with clean state management.
 - [ ] **08. Password Strength & Entropy Evaluator** — Shannon entropy estimation and character-class rule scoring.
