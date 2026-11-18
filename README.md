@@ -7,13 +7,13 @@
 **A deliberate 100-project masterclass in algorithmic thinking, mental modeling, and self-reliant software engineering.**
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Progress](https://img.shields.io/badge/Progress-3%2F100%20(3%25)-00C853?style=for-the-badge)](https://github.com/kumarnallana/100-Mini-Pytho-Projects)
+[![Progress](<https://img.shields.io/badge/Progress-3%2F100%20(3%25)-00C853?style=for-the-badge>)](https://github.com/kumarnallana/100-Mini-Pytho-Projects)
 [![Logic](https://img.shields.io/badge/Focus-First--Principles-FF6F00?style=for-the-badge)](https://github.com/kumarnallana/100-Mini-Pytho-Projects)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
 <br />
 
-*"True programming mastery is not measured by how fast you can prompt an AI or copy-paste code. It is forged by breaking a problem down to its core invariants, formulating the logic step-by-step in your own mind, and crafting the solution from first principles."*
+_"True programming mastery is not measured by how fast you can prompt an AI or copy-paste code. It is forged by breaking a problem down to its core invariants, formulating the logic step-by-step in your own mind, and crafting the solution from first principles."_
 
 </div>
 
@@ -24,6 +24,7 @@
 In modern software development, it has become temptingly easy to ask AI assistants for pre-packaged code. While AI is a powerful accelerator, relying on it prematurely creates an illusion of competence—leaving developers with brittle problem-solving intuition, weak debugging skills, and an inability to reason through complex edge cases.
 
 This repository marks a conscious decision to **start over from the ground up**:
+
 - 🛑 **No Blind Copy-Pasting**: Every project is architected and solved independently.
 - 🧩 **First-Principles Thinking**: Rely on core language constructs—loops, conditionals, pointers, state machines, and mathematical formulas—before reaching for high-level abstractions.
 - 📐 **Visual Logic Before Syntax**: Write pseudocode and draw logic flow diagrams before writing a single line of Python.
@@ -57,26 +58,27 @@ Every single project in this repository adheres to a strict four-phase methodolo
 
 ## 📊 Progress Dashboard
 
-| Tier | Focus Area | Projects | Status | Progress |
-| :---: | :--- | :---: | :---: | :---: |
-| **01** | Foundations & Accumulator Logic | 01 – 10 | 🟡 In Progress | 5 / 10 |
-| **02** | Control Flow, Collections & State | 11 – 20 | ⚪ Upcoming | 0 / 10 |
-| **03** | Data Processing, Parsing & File I/O | 21 – 30 | ⚪ Upcoming | 0 / 10 |
-| **04** | Object-Oriented Design & Simulators | 31 – 40 | ⚪ Upcoming | 0 / 10 |
-| **05** | Core Data Structures from Scratch | 41 – 50 | ⚪ Upcoming | 0 / 10 |
-| **06** | Classic Algorithms & Problem Solving | 51 – 60 | ⚪ Upcoming | 0 / 10 |
-| **07** | CLI Power Tools & Workflow Utilities | 61 – 70 | ⚪ Upcoming | 0 / 10 |
-| **08** | Interactive Games & Simulations | 71 – 80 | ⚪ Upcoming | 0 / 10 |
-| **09** | Networking, Web & API Engineering | 81 – 90 | ⚪ Upcoming | 0 / 10 |
-| **10** | Capstone Systems & Interpreters | 91 – 100 | ⚪ Upcoming | 0 / 10 |
-| **TOTAL** | **The Complete Logic Challenge** | **100** | 🚀 **5% Complete** | **5 / 100** |
+|   Tier    | Focus Area                           | Projects |       Status       |  Progress   |
+| :-------: | :----------------------------------- | :------: | :----------------: | :---------: |
+|  **01**   | Foundations & Accumulator Logic      | 01 – 10  |   🟡 In Progress   |   5 / 10    |
+|  **02**   | Control Flow, Collections & State    | 11 – 20  |    ⚪ Upcoming     |   0 / 10    |
+|  **03**   | Data Processing, Parsing & File I/O  | 21 – 30  |    ⚪ Upcoming     |   0 / 10    |
+|  **04**   | Object-Oriented Design & Simulators  | 31 – 40  |    ⚪ Upcoming     |   0 / 10    |
+|  **05**   | Core Data Structures from Scratch    | 41 – 50  |    ⚪ Upcoming     |   0 / 10    |
+|  **06**   | Classic Algorithms & Problem Solving | 51 – 60  |    ⚪ Upcoming     |   0 / 10    |
+|  **07**   | CLI Power Tools & Workflow Utilities | 61 – 70  |    ⚪ Upcoming     |   0 / 10    |
+|  **08**   | Interactive Games & Simulations      | 71 – 80  |    ⚪ Upcoming     |   0 / 10    |
+|  **09**   | Networking, Web & API Engineering    | 81 – 90  |    ⚪ Upcoming     |   0 / 10    |
+|  **10**   | Capstone Systems & Interpreters      | 91 – 100 |    ⚪ Upcoming     |   0 / 10    |
+| **TOTAL** | **The Complete Logic Challenge**     | **100**  | 🚀 **5% Complete** | **5 / 100** |
 
 ---
 
 ## 🗺️ The Complete 100-Project Curriculum
 
 ### Tier 1: Foundations & Accumulator Logic (Projects 01–10)
-> *Focus: Raw iteration, state accumulation, conditional branching, and scalar math.*
+
+> _Focus: Raw iteration, state accumulation, conditional branching, and scalar math._
 
 - [x] **01. [Salary Expense Tracker](./Project-1_Salary_Expense_Tracker)** — Manual record counting, sum accumulation, threshold filtering, and OOP reporting.
 - [x] **02. [Employee Performance Tracker](./Project_2_Employee_Performance)** — Record search by ID, department grouping, aggregation analytics, quality score metrics, and task updates.
@@ -92,7 +94,8 @@ Every single project in this repository adheres to a strict four-phase methodolo
 ---
 
 ### Tier 2: Control Flow, Collections & State (Projects 11–20)
-> *Focus: Dictionaries, nested structures, state machines, and string manipulation.*
+
+> _Focus: Dictionaries, nested structures, state machines, and string manipulation._
 
 - [ ] **11. Caesar & Vigenère Cipher Engine** — Modular arithmetic encoding and decoding.
 - [ ] **12. Contact Book CLI** — In-memory dictionary CRUD with fuzzy substring search.
@@ -108,7 +111,8 @@ Every single project in this repository adheres to a strict four-phase methodolo
 ---
 
 ### Tier 3: Data Processing, Parsing & File I/O (Projects 21–30)
-> *Focus: Raw byte/stream handling, custom text parsers, and persistent state storage.*
+
+> _Focus: Raw byte/stream handling, custom text parsers, and persistent state storage._
 
 - [ ] **21. Custom CSV Parser & Serializer** — Handling delimiters, escaped quotes, and newlines from scratch.
 - [ ] **22. Server Log Analyzer & Error Extractor** — Timestamp parsing, regex pattern extraction, and error rate metrics.
@@ -124,7 +128,8 @@ Every single project in this repository adheres to a strict four-phase methodolo
 ---
 
 ### Tier 4: Object-Oriented Design & System Simulators (Projects 31–40)
-> *Focus: Encapsulation, inheritance, polymorphism, design patterns, and domain modeling.*
+
+> _Focus: Encapsulation, inheritance, polymorphism, design patterns, and domain modeling._
 
 - [ ] **31. ATM & Banking System** — Accounts, transaction ledger, PIN authentication, and overdraft limits.
 - [ ] **32. Digital Library Management System** — Item catalog, patron lending rules, overdue fine calculators.
@@ -140,7 +145,8 @@ Every single project in this repository adheres to a strict four-phase methodolo
 ---
 
 ### Tier 5: Core Data Structures from Scratch (Projects 41–50)
-> *Focus: Memory layout, pointers, dynamic arrays, and custom data container architectures.*
+
+> _Focus: Memory layout, pointers, dynamic arrays, and custom data container architectures._
 
 - [ ] **41. Singly & Doubly Linked Lists** — Insertion, deletion, cycle detection (Floyd's algorithm), and in-place reversal.
 - [ ] **42. Custom Stack & Syntax Validator** — Bracket matching, HTML tag balancer, and call-stack simulation.
@@ -156,7 +162,8 @@ Every single project in this repository adheres to a strict four-phase methodolo
 ---
 
 ### Tier 6: Classic Algorithms & Problem Solving (Projects 51–60)
-> *Focus: Divide & conquer, recursion, backtracking, dynamic programming, and greedy methods.*
+
+> _Focus: Divide & conquer, recursion, backtracking, dynamic programming, and greedy methods._
 
 - [ ] **51. Sorting Algorithm Visualizer (CLI)** — Step-by-step Bubble, Selection, Insertion, Merge, and Quick Sort.
 - [ ] **52. Dijkstra’s Shunting-Yard Expression Evaluator** — Converting infix math expressions to postfix (RPN) and computing.
@@ -172,7 +179,8 @@ Every single project in this repository adheres to a strict four-phase methodolo
 ---
 
 ### Tier 7: CLI Power Tools & Practical Utilities (Projects 61–70)
-> *Focus: Command-line ergonomics, argument parsing, OS interaction, and developer tooling.*
+
+> _Focus: Command-line ergonomics, argument parsing, OS interaction, and developer tooling._
 
 - [ ] **61. Recursive Directory Tree Generator** — Terminal visual directory hierarchy with file sizes and depth limits.
 - [ ] **62. Batch File Renamer & Pattern Replacer** — Regex file renaming with dry-run verification mode.
@@ -188,7 +196,8 @@ Every single project in this repository adheres to a strict four-phase methodolo
 ---
 
 ### Tier 8: Interactive Terminal Games & Simulations (Projects 71–80)
-> *Focus: Game loops, heuristic search, grid mechanics, physics modeling, and collision detection.*
+
+> _Focus: Game loops, heuristic search, grid mechanics, physics modeling, and collision detection._
 
 - [ ] **71. Unbeatable Tic-Tac-Toe AI** — Minimax decision tree evaluation with recursion.
 - [ ] **72. Connect Four with Alpha-Beta Pruning** — Heuristic evaluation function and depth-limited minimax.
@@ -204,7 +213,8 @@ Every single project in this repository adheres to a strict four-phase methodolo
 ---
 
 ### Tier 9: Networking, Web & API Engineering (Projects 81–90)
-> *Focus: Socket programming, HTTP protocol specifications, serialization, and distributed concepts.*
+
+> _Focus: Socket programming, HTTP protocol specifications, serialization, and distributed concepts._
 
 - [ ] **81. HTTP 1.1 Server from Raw Sockets** — Socket listening, HTTP request line parsing, headers, MIME types, and status codes.
 - [ ] **82. Multi-Client Chat Room Server & Client** — Multi-threaded socket server with broadcast message dispatching.
@@ -220,7 +230,8 @@ Every single project in this repository adheres to a strict four-phase methodolo
 ---
 
 ### Tier 10: Capstone Systems & Interpreters (Projects 91–100)
-> *Focus: Compilers, database engines, distributed ledgers, and systems programming.*
+
+> _Focus: Compilers, database engines, distributed ledgers, and systems programming._
 
 - [ ] **91. Mini Git Version Control** — Recreating `.git`, `hash-object`, `cat-file`, `commit-tree`, and `log`.
 - [ ] **92. Arithmetic Expression Lexer & AST Parser** — Tokenization, grammar definition, and recursive descent AST evaluation.
@@ -285,8 +296,8 @@ To maintain the highest engineering rigor, this repository operates on a strict 
    - Details the pure Python solution, code structure, and execution instructions.
    - Provides time ($O$) and space ($O$) complexity benchmarks.
    - Captures personal lessons learned and mental models forged.
-   
-*(To start a new project, simply copy [`PROJECT_TEMPLATE.md`](./PROJECT_TEMPLATE.md) into your new project directory as `Project-X~Project_Name/README.md`).*
+
+_(To start a new project, simply copy [`PROJECT_TEMPLATE.md`](./PROJECT_TEMPLATE.md) into your new project directory as `Project-X~Project_Name/README.md`)._
 
 ---
 
@@ -313,6 +324,7 @@ Each project is designed to be fully self-contained with zero external third-par
 ## ✍️ Contribution & Personal Pledge
 
 > **I pledge to:**
+>
 > 1. Solve each project with my own mental logic and deliberate practice.
 > 2. Create a visual diagram or pseudocode card before writing code.
 > 3. Embrace the struggle of debugging and reasoning through edge cases.
